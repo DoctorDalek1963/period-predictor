@@ -1,7 +1,10 @@
 //! This crate provides a way to predict menstrual cycles based on historical data.
 
+#![feature(array_windows)]
+
 mod parse;
 mod plot;
+mod predict;
 
 use color_eyre::Result;
 use std::fs;
